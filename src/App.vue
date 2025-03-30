@@ -1,6 +1,10 @@
 
 <template>
-  <TheHeader> </TheHeader>
+  <AppHeader
+  v-show="showHeader"
+  >
+
+ </AppHeader> 
   <img alt="Vue logo" src="./assets/logo.png">
   <h2>to ficando maluco</h2>
   <HelloWorld msg="Welcome to Your Vue.js App"/>
@@ -8,13 +12,18 @@
 
 <script>
 import HelloWorld from './components/HelloWorld.vue';
-import TheHeader from './components/TheHeader.vue';
+import AppHeader from './components/AppHeader.vue';
 
 export default {
   name: 'App',
   components: {
     HelloWorld,
-    TheHeader
+    AppHeader
+  },
+  data() {
+    return {
+      showHeader: true
+    }
   }
 }
 </script>
