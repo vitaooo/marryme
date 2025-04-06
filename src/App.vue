@@ -7,18 +7,20 @@
  </AppHeader> 
   <img alt="Vue logo" src="./assets/logo.png">
   <h2>to ficando maluco</h2>
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <PicsComponent>
+  </PicsComponent>
+  
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue';
 import AppHeader from './components/AppHeader.vue';
+import PicsComponent from './components/PicsComponent.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld,
-    AppHeader
+    AppHeader,
+    PicsComponent
   },
   data() {
     return {
